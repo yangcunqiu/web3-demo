@@ -2,9 +2,10 @@ import Web3 from "web3";
 
 const web3 = new Web3(Web3.givenProvider || "http://127.0.0.1:7545");
 
-etherToWei();
+// etherToWei();
 // weiToEther();
 // getBalance();
+createAccount();
 
 
 // 任意数量ether转换成wei
@@ -29,5 +30,8 @@ function getBalance() {
 
 // 创建账户
 function createAccount() {
-
+    var u = web3.eth.accounts.create("asdoloaqw");
+    console.log(u);
+    // 0x1B1D307977BeFFFD36c1053369E0bBFb75598e39
+    // 0x4b244723673300ef0d1d7dbbe72d029d93380ca03c0d3455f9fb923d5559bc95
 }
